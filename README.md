@@ -1,3 +1,10 @@
+# JWT 기반 인증 구현 시 보안강화를 위해 클라이언트 IP와 device 추가
+- [JWT(JSON Web Token)기반 인증 및 권한관리 구현시 보안강화를 위한 방안 문의](https://wiki.wikisecurity.net/faq:jwt-3)
+- JWT 기반 인증 구현 시 보안강화를 위해 <b>클라이언트의 IP, 지문, HTTP 헤더 (User-Agent), 쿠키 및 세션, 시간대, 지리적 위치 등</b>을 활용할 수 있음.
+- 이 중 구현이 간단한 <b>IP</b>와 <b>User-Agent(브라우저, 운영체제, 장치 정보)</b>를 활용하기로 함.
+
+---
+
 ## 로그인
 <b>POST</b> `/sign-in`
 
